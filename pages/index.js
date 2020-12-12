@@ -4,24 +4,10 @@ function Home() {
     return (
         <div>
             <h1>Em construção!</h1>
+            <a href="/sobre"> Link de Teste</a>
         </div>
     )
         
-}
-
-function Contador() {
-    const [contador,setContador] = useState(1);
-
-    function adicionarContador() {
-        setContador(contador + 1);
-    }
-
-    return(
-        <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar Contador</button>
-        </div>
-    )
 }
 
 export default Home
