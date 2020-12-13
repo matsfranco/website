@@ -1,8 +1,9 @@
 import Link from 'next/link'
+import Layout from "../components/Layout"
 
 function LinkTree() {
     return (
-        <div>
+        <Layout>
             <h1>Link Tree</h1>
             <div>
                 <Link href="https://www.linkedin.com/in/matsfranco">  
@@ -34,7 +35,7 @@ function LinkTree() {
                     <a>Trailblazer.me</a>
                 </Link>
             </div>
-        </div>
+        </Layout>
     )
         
 }

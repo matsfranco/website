@@ -1,13 +1,14 @@
 import Link from 'next/link'
+import Layout from "../components/Layout"
 
 function Blog() {
     return (
-        <div>
+        <Layout>
             <h1>Blog (Em construção!)</h1>
             <Link  href="/">  
                 <a>Voltar para Home</a>
             </Link>
-        </div>
+        </Layout>
     )  
 }
 

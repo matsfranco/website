@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 function Home() {
     return (
         <Layout>
-        <div>
             <h1>Em construção!</h1>
             <div>
                 <Link href="/link-tree">
@@ -16,7 +15,6 @@ function Home() {
                     <a>Sobre</a>
                 </Link>
             </div>
-        </div>
         </Layout>
         
     )
