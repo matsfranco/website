@@ -24,6 +24,11 @@ function LinkTree() {
                     <a>Instagram</a>
                 </Link>
             </div>
+            <div>
+                <Link href="https://trailblazer.me/id/matsfranco">  
+                    <a>Trailblazer.me</a>
+                </Link>
+            </div>
         </div>
     )
         
