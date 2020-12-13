@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Layout from "../components/Layout"
+import Typography from "@material-ui/core/Typography";
 
 function Home() {
     return (
         <Layout>
-            <h1>Home Page</h1>
-            <div>Em construção!</div>
+            <Typography variant="h3">Home Page</Typography>
+            <Typography variant="subtitle1">Em construção!</Typography>
         </Layout>
         
     )
