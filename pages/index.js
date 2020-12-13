@@ -4,12 +4,16 @@ function Home() {
     return (
         <div>
             <h1>Em construção!</h1>
-            <Link href="/link-tree">
-                <a>Link Tree</a>
-            </Link>
-            <Link href="/sobre">
-                <a>Sobre</a>
-            </Link>
+            <div>
+                <Link href="/link-tree">
+                    <a>Link Tree</a>
+                </Link>  
+            </div>
+            <div>
+                <Link href="/sobre">
+                    <a>Sobre</a>
+                </Link>
+            </div>
         </div>
     )
         
