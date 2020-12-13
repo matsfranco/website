@@ -11,7 +11,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FilterHdrIcon from '@material-ui/icons/FilterHdr';
-
+import YouTubeIcon from '@material-ui/icons/YouTube';
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
@@ -28,16 +28,15 @@ function LinkTree() {
 
     return (
         <Layout>
-            <Typography variant='h3'>Redes Sociais e Sites</Typography>
+            <Typography variant='h3'>Redes Sociais</Typography>
             <div class={classes.root}>
-                <Link href="https://www.linkedin.com/in/matsfranco">  
+                <Link  href="https://www.facebook.com/matsfranco">  
                     <Button 
                         variant="contained" 
                         color="default" 
                         size="large"
-                        startIcon={<LinkedInIcon/>}>LinkedIn</Button>
+                        startIcon={<FacebookIcon/>}>Facebook</Button>
                 </Link>
-
             </div>
             <div class={classes.root}>
                 <Link href="https://www.github.com/matsfranco">  
@@ -46,15 +45,6 @@ function LinkTree() {
                         color="default" 
                         size="large"
                         startIcon={<GitHubIcon/>}>GitHub</Button>
-                </Link>
-            </div>
-            <div class={classes.root}>
-                <Link  href="https://www.facebook.com/matsfranco">  
-                    <Button 
-                        variant="contained" 
-                        color="default" 
-                        size="large"
-                        startIcon={<FacebookIcon/>}>Facebook</Button>
                 </Link>
             </div>
             <div class={classes.root}>
@@ -67,13 +57,14 @@ function LinkTree() {
                 </Link>
             </div>
             <div class={classes.root}>
-                <Link href="https://twitter.com/matsfranco">  
+                <Link href="https://www.linkedin.com/in/matsfranco">  
                     <Button 
                         variant="contained" 
                         color="default" 
                         size="large"
-                        startIcon={<TwitterIcon/>}>Twitter</Button>
+                        startIcon={<LinkedInIcon/>}>LinkedIn</Button>
                 </Link>
+
             </div>
             <div class={classes.root}>
                 <Link href="https://trailblazer.me/id/matsfranco">  
@@ -84,7 +75,24 @@ function LinkTree() {
                         startIcon={<FilterHdrIcon/>}>Trailbazer Community</Button>
                 </Link>
             </div>
-
+            <div class={classes.root}>
+                <Link href="https://twitter.com/matsfranco">  
+                    <Button 
+                        variant="contained" 
+                        color="default" 
+                        size="large"
+                        startIcon={<TwitterIcon/>}>Twitter</Button>
+                </Link>
+            </div>
+            <div class={classes.root}>
+                <Link href="https://www.youtube.com/channel/UCG6cqFRh5lsIJmpTLPeWw3Q">  
+                    <Button 
+                        variant="contained" 
+                        color="default" 
+                        size="large"
+                        startIcon={<YouTubeIcon/>}>YouTube</Button>
+                </Link>
+            </div>
         </Layout>
     )
         
