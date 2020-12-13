@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import Layout from "../components/Layout"
 
-function Home() {
+function Blog() {
     return (
         <Layout>
-            <h1>Home Page</h1>
+            <h1>Blog</h1>
             <div>Em construção!</div>
+            <Link  href="/">  
+                <a>Voltar para Home</a>
+            </Link>
         </Layout>
-        
-    )
-        
+    )  
 }
 
-export default Home
+export default Blog
