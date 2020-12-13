@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       maxWidth: 500,
     },
     media: {
-      height: 250,
+      height: 280,
     },
     paper: {
         textAlign: 'center',
@@ -42,9 +42,11 @@ function Portfolio() {
                 <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
+                            component="img"
+                            alt="Robô do tipo seguidor de linha com duas rodas com um monitor ao fundo"
                             className={classes.media}
-                            image="/static/images/academic_card_cover.jpg"
-                            title="Contemplative Reptile"/>
+                            image="/static/images/academic_card_cover.png"
+                            title="Adaptative Line Follower"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Acadêmico
@@ -67,9 +69,11 @@ function Portfolio() {
             <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
+                            component="img"
+                            alt="Boneco de pelúcia do Astro, mascote da Salesforce, junto a uma garrafa térmica da Localiza"
                             className={classes.media}
-                            image="/static/images/professional_card_cover.jpg"
-                            title="Contemplative Reptile"/>
+                            image="/static/images/professional_card_cover.png"
+                            title="Dia de integração na Localiza"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Profissional
