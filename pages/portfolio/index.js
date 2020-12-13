@@ -16,7 +16,7 @@ import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
     card: {
-      maxWidth: 500,
+      maxWidth: 300,
     },
     media: {
       height: 230,
@@ -92,33 +92,6 @@ function Portfolio() {
                 </Card>  
             </Box>
             <Box p={1}>
-                <Card className={classes.card}>
-                    <CardActionArea>
-                        <CardMedia
-                            component="img"
-                            alt="Robô do tipo seguidor de linha com duas rodas com um monitor ao fundo"
-                            className={classes.media}
-                            image="/static/images/academic_card_cover.png"
-                            title="Adaptative Line Follower"/>
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Pessoal
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                Projetos pessoas que desenvolvo nas horas vagas a título de hobby
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Link href="/portfolio/academic">   
-                            <Button size="small" color="primary">
-                                Saiba mais
-                            </Button>
-                        </Link>
-                    </CardActions>
-                </Card>  
-            </Box>
-            <Box p={1}>
             <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
@@ -137,7 +110,7 @@ function Portfolio() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <Link href="/portfolio/professional">    
+                        <Link href="/portfolio/volunteer">    
                             <Button size="small" color="primary">
                                 Saiba mais
                             </Button>
