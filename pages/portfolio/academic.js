@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import Layout from "../components/Layout"
+import Layout from "../../components/Layout"
 import Typography from "@material-ui/core/Typography";
 
-function Home() {
+function AcademicPortfolio() {
     return (
         <Layout>
-            <Typography variant="h3">Home Page</Typography>
+            <Typography variant="h3">Portfolio Acadêmico</Typography>
             <Typography variant="subtitle1">Em construção!</Typography>
         </Layout>
         
@@ -13,4 +13,4 @@ function Home() {
         
 }
 
-export default Home
+export default AcademicPortfolio

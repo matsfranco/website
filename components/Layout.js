@@ -9,7 +9,7 @@ import "./index.scss";
 import navButtons from "../config/buttons";
 
 const Layout = props => {
-  const appTitle = `> Mateus Franco`;
+  const appTitle = `Mateus Franco`;
 
   return (
     <div className="Layout">
