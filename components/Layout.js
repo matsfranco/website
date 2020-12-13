@@ -13,6 +13,7 @@ const Layout = props => {
 
   return (
     <div className="Layout">
+      <meta name="theme-color" content="$secondary" />
       <Head>
         <title>Mateus Franco</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
