@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       maxWidth: 500,
     },
     media: {
-      height: 280,
+      height: 230,
     },
     paper: {
         textAlign: 'center',
@@ -34,10 +34,36 @@ function Portfolio() {
         <Box
             display="flex"
             flexWrap="wrap"
-            justify-content="center"
             p={1}
             m={1}
             css={{ maxWidth: 1100 }}>
+            <Box p={1}>
+            <Card className={classes.card}>
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            alt="Boneco de pelúcia do Astro, mascote da Salesforce, junto a uma garrafa térmica da Localiza"
+                            className={classes.media}
+                            image="/static/images/professional_card_cover.png"
+                            title="Dia de integração na Localiza"/>
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Profissional
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                Projetos em que participei nas empresas em que tive oportunidade de trabalhar
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Link href="/portfolio/professional">    
+                            <Button size="small" color="primary">
+                                Saiba mais
+                            </Button>
+                        </Link>
+                    </CardActions>
+                </Card> 
+            </Box>
             <Box p={1}>
                 <Card className={classes.card}>
                     <CardActionArea>
@@ -66,6 +92,33 @@ function Portfolio() {
                 </Card>  
             </Box>
             <Box p={1}>
+                <Card className={classes.card}>
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            alt="Robô do tipo seguidor de linha com duas rodas com um monitor ao fundo"
+                            className={classes.media}
+                            image="/static/images/academic_card_cover.png"
+                            title="Adaptative Line Follower"/>
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Pessoal
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                Projetos pessoas que desenvolvo nas horas vagas a título de hobby
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Link href="/portfolio/academic">   
+                            <Button size="small" color="primary">
+                                Saiba mais
+                            </Button>
+                        </Link>
+                    </CardActions>
+                </Card>  
+            </Box>
+            <Box p={1}>
             <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
@@ -76,10 +129,10 @@ function Portfolio() {
                             title="Dia de integração na Localiza"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
-                                Profissional
+                                Voluntário
                             </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">
-                                Projetos em que participei nas empresas em que tive oportunidade de trabalhar
+                                Projetos para apoiar iniciativas voluntárias e sem fins lucrativos
                             </Typography>
                         </CardContent>
                     </CardActionArea>
