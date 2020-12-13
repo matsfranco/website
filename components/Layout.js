@@ -2,6 +2,7 @@
 
 import Header from "./Header";
 import NavBar from "./NavBar";
+import Head from "next/head";
 
 const layoutStyle = {
   display: "flex",
@@ -17,13 +18,30 @@ const contentStyle = {
 };
 
 const Layout = props => (
-  <div className="Layout" style={layoutStyle}>
+  <div className="Layout">
+    <Head>
+      <title>Mateus Franco</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charSet="utf-8" />
+    </Head>
     <Header />
     <NavBar />
-    <div className="Content" style={contentStyle}>
-      {props.children}
-    </div>
-    
+    <div className="Content">{props.children}</div>
+
+    <style jsx>{`
+      .Layout {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+
+      .Content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    `}</style>
   </div>
 );
 
