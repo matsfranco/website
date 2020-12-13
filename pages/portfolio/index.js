@@ -19,7 +19,7 @@ const useStyles = makeStyles({
       maxWidth: 500,
     },
     media: {
-      height: 250,
+      height: 280,
     },
     paper: {
         textAlign: 'center',
@@ -44,7 +44,7 @@ function Portfolio() {
                         <CardMedia
                             className={classes.media}
                             image="/static/images/academic_card_cover.jpg"
-                            title="Contemplative Reptile"/>
+                            title="Adaptative Line Follower"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Acadêmico
@@ -69,7 +69,7 @@ function Portfolio() {
                         <CardMedia
                             className={classes.media}
                             image="/static/images/professional_card_cover.jpg"
-                            title="Contemplative Reptile"/>
+                            title="Dia de integração na Localiza"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
                                 Profissional
