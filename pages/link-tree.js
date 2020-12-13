@@ -25,6 +25,11 @@ function LinkTree() {
                 </Link>
             </div>
             <div>
+                <Link href="https://twitter.com/matsfranco">  
+                    <a>Twitter</a>
+                </Link>
+            </div>
+            <div>
                 <Link href="https://trailblazer.me/id/matsfranco">  
                     <a>Trailblazer.me</a>
                 </Link>
