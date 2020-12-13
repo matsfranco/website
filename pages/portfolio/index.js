@@ -42,6 +42,7 @@ function Portfolio() {
                 <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
+                            component="img"
                             className={classes.media}
                             image="/static/images/academic_card_cover.jpg"
                             title="Adaptative Line Follower"/>
@@ -67,6 +68,7 @@ function Portfolio() {
             <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
+                            component="img"
                             className={classes.media}
                             image="/static/images/professional_card_cover.jpg"
                             title="Dia de integração na Localiza"/>
