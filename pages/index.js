@@ -1,7 +1,9 @@
 import Link from 'next/link'
+import Layout from "../components/Layout"
 
 function Home() {
     return (
+        <Layout>
         <div>
             <h1>Em construção!</h1>
             <div>
@@ -15,6 +17,8 @@ function Home() {
                 </Link>
             </div>
         </div>
+        </Layout>
+        
     )
         
 }
