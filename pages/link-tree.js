@@ -6,33 +6,35 @@ function LinkTree() {
         <Layout>
             <h1>Link Tree</h1>
             <div>
+                
                 <Link href="https://www.linkedin.com/in/matsfranco">  
-                    <a>LinkedIn</a>
+                    <button label="LinkedIn" title="LinkedIn">LinkedIn</button>
                 </Link>
+
             </div>
             <div>
                 <Link href="https://www.github.com/matsfranco">  
-                    <a>GitHub</a>
+                    <button label="GitHub" title="GitHub">GitHub</button>
                 </Link>
             </div>
             <div>
                 <Link  href="https://www.facebook.com/matsfranco">  
-                    <a>Facebook</a>
+                    <button>Facebook</button>
                 </Link>
             </div>
             <div>
-                <Link href="https://www.instagram.com/mateussfranco">  
-                    <a>Instagram</a>
+                <Link href="https://www.instagram.com/mateussfranco">     
+                    <button>Instagram</button>
                 </Link>
             </div>
             <div>
                 <Link href="https://twitter.com/matsfranco">  
-                    <a>Twitter</a>
+                    <button>Twitter</button>
                 </Link>
             </div>
             <div>
                 <Link href="https://trailblazer.me/id/matsfranco">  
-                    <a>Trailblazer.me</a>
+                    <button>Trailblazer.me</button>
                 </Link>
             </div>
         </Layout>

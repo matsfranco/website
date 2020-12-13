@@ -4,7 +4,8 @@ import Layout from "../components/Layout"
 function Home() {
     return (
         <Layout>
-            <h1>Em construção!</h1>
+            <h1>Home Page</h1>
+            <div>Em construção!</div>
         </Layout>
         
     )
