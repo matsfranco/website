@@ -23,6 +23,7 @@ const useStyles = makeStyles({
     },
     paper: {
         textAlign: 'center',
+        height: 230,
     },
   });
 
@@ -38,8 +39,10 @@ function Portfolio() {
             m={1}
             css={{ maxWidth: 1100 }}>
             <Box p={1}>
+            <Link href="/portfolio/professional"> 
             <Card className={classes.card}>
                     <CardActionArea>
+                        
                         <CardMedia
                             component="img"
                             alt="Boneco de pelúcia do Astro, mascote da Salesforce, junto a uma garrafa térmica da Localiza"
@@ -55,16 +58,11 @@ function Portfolio() {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                    <CardActions>
-                        <Link href="/portfolio/professional">    
-                            <Button size="small" color="primary">
-                                Saiba mais
-                            </Button>
-                        </Link>
-                    </CardActions>
                 </Card> 
+                </Link>
             </Box>
             <Box p={1}>
+                <Link href="/portfolio/academic">  
                 <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
@@ -82,41 +80,8 @@ function Portfolio() {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                    <CardActions>
-                        <Link href="/portfolio/academic">   
-                            <Button size="small" color="primary">
-                                Saiba mais
-                            </Button>
-                        </Link>
-                    </CardActions>
-                </Card>  
-            </Box>
-            <Box p={1}>
-            <Card className={classes.card}>
-                    <CardActionArea>
-                        <CardMedia
-                            component="img"
-                            alt="Boneco de pelúcia do Astro, mascote da Salesforce, junto a uma garrafa térmica da Localiza"
-                            className={classes.media}
-                            image="/static/images/professional_card_cover.png"
-                            title="Dia de integração na Localiza"/>
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                Voluntário
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                Projetos para apoiar iniciativas voluntárias e sem fins lucrativos
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActions>
-                        <Link href="/portfolio/volunteer">    
-                            <Button size="small" color="primary">
-                                Saiba mais
-                            </Button>
-                        </Link>
-                    </CardActions>
-                </Card> 
+                </Card>
+                </Link>  
             </Box>
         </Box>
     </Layout>
