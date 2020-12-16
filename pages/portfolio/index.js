@@ -15,8 +15,10 @@ import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
+    root: {
+        flexGrow: 1,
+      },
     card: {
-      maxWidth: 500,
       height: 350,
     },
     media: {
@@ -37,13 +39,14 @@ function Portfolio(props) {
         <Typography variant="h3">Portfolio</Typography>
         <Grid
             container
-            spacing={2}
+            spacing={5}
             direction="row"
             alignItems="center"
             justify="center"
-            style={{ minHeight: '50vh' }}>
-            
-            <Grid item xs={4}>
+            style={{ minHeight: '45vh' }}
+            className = {classes.root}
+            item sm={12}>
+            <Grid item sm={4}>
                 <Link href="/portfolio/professional"> 
                     <Card className={classes.card}>
                         <CardActionArea>
@@ -63,7 +66,7 @@ function Portfolio(props) {
                     </Card> 
                 </Link>
             </Grid>     
-            <Grid item xs={4}>
+            <Grid item sm={4}>
                 <Link href="/portfolio/academic">  
                     <Card className={classes.card}>
                         <CardActionArea>
