@@ -1,10 +1,12 @@
+import Link from 'next/link'
 import Layout from "../components/Layout"
+import Typography from "@material-ui/core/Typography";
 
 function Profile() {
     return (
         <Layout>
-            <h1>Perfil</h1>
-            <div>Em construção!</div>
+            <Typography variant="h3">Perfil</Typography>
+            <Typography variant="subtitle1">Em construção!</Typography>
         </Layout>
     )
         

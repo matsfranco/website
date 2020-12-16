@@ -1,14 +1,12 @@
 import Link from 'next/link'
 import Layout from "../components/Layout"
+import Typography from "@material-ui/core/Typography";
 
 function Contato() {
     return (
         <Layout>
-            <h1>Contato</h1>
-            <div>Em construção!</div>
-            <Link  href="/">  
-                <a>Voltar para Home</a>
-            </Link>
+            <Typography variant="h3">Contato</Typography>
+            <Typography variant="subtitle1">Em construção!</Typography>
         </Layout>
     )  
 }
