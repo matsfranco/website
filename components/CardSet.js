@@ -14,6 +14,7 @@ const CardSet = props => (
     item sm={12}>
         {props.cards.map(card => (
             <SingleCard
+                key={card.cardName}
                 cardName={card.cardName}
                 cardText={card.cardText}
                 path={card.path}
