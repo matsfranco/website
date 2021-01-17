@@ -11,7 +11,6 @@ function Portfolio(props) {
     return (
     <Layout>
         <Typography variant="h3">Portfolio</Typography>
-        <CardSet cards={portfolioCards} />
     </Layout>
     )  
 }
