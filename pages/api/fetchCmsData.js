@@ -14,7 +14,7 @@ async function getCmsData(request, response) {
 }
 
 async function getCmsByContentType(contentType) {
-    
+    console.log('Fetching '+contentType+ ' from CMS Database...')
     const apiSecret = process.env.CMS_API_SECRET;
 
     const fetchParams = {
@@ -25,11 +25,6 @@ async function getCmsByContentType(contentType) {
 
     const cmsResponse = await fetch(buildEndPointUrl(contentType), fetchParams); 
     const content = await cmsResponse.json();
-
-    console.log((content.data).length);
-    for(let i = 0;i < (content.data).length;i++) {
-        console.log('['+content.data[i].id+'] '+content.data[i].attributes.title);
-    }
 
     return content.data;
 }
