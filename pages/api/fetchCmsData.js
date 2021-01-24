@@ -26,7 +26,7 @@ async function getCmsByContentType(contentType) {
     const cmsResponse = await fetch(buildEndPointUrl(contentType), fetchParams); 
     const content = await cmsResponse.json();
     
-    console.log('>> getCmsData: '+(content.data).length+ ' '+contentType+' found\n');
+    console.log('>> getCmsData: '+(content.data).length+ ' '+contentType+' record(s) found\n');
     return content.data;
 }
 
