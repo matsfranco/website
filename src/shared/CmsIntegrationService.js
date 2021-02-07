@@ -1,7 +1,6 @@
 class CmsService {
 
     constructor() {
-        this.getData();
     }
 
     async getData() {

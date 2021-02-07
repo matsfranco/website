@@ -1,10 +1,8 @@
 import Link from 'next/link'
 import Layout from "../components/Layout"
 import Typography from "@material-ui/core/Typography";
-import CmsService from '../src/shared/cms-service';
 
 function Home() {
-    let test = new CmsService();
     return (
         <Layout>
             <Typography variant="h3">Home Page</Typography>
