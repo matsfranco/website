@@ -1,17 +1,9 @@
-import Link from 'next/link'
-import Layout from "../components/Layout"
-import Typography from "@material-ui/core/Typography";
+import Layout from '../src/components/Layout/index.js';
 
-function Home() {
-    return (
+export default function Home() {
+    return(
         <Layout>
-            <Typography variant="h3">Home Page</Typography>
-            <Typography variant="subtitle1">Seja bem-vindo(a) ao meu site!</Typography>
-            <Typography variant="subtitle1">Ainda em construção!</Typography>
+            <div>Home</div>
         </Layout>
-        
-    )
-        
+    );
 }
-
-export default Home

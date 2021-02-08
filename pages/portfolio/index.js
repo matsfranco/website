@@ -1,18 +1,9 @@
-import Link from 'next/link'
-import Layout from "../../components/Layout"
+import Layout from '../../src/components/Layout/index.js';
 
-import Typography from '@material-ui/core/Typography';
-
-import CardSet from "../../components/CardSet"
-import portfolioCards from "../../config/portfolio-cards";
-   
-  
-function Portfolio(props) {
-    return (
-    <Layout>
-        <Typography variant="h3">Portfolio</Typography>
-    </Layout>
-    )  
+export default function Home() {
+    return(
+        <Layout>
+            <div>Home</div>
+        </Layout>
+    );
 }
-
-export default Portfolio
