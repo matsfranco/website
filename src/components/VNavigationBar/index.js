@@ -8,12 +8,13 @@ const VNavBar = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: ${({ theme }) => theme.colors.vNavBarcolor};
-    height: 50vh;
+    background: ${({ theme }) => theme.colors.secondary};
+    opacity:0.9;
+    height: 45vh;
     text-align: left;
     padding: 2rem;
     position: absolute;
-    top: 0;
+    top: 2.5rem;
     left: 0;
     transition: transform 0.5s ease-in-out;
 
