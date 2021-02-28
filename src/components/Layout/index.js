@@ -5,15 +5,21 @@ import Head from "next/head";
 
 
 const DefaultPageLayout = styled.div`
-    color: ${({ theme }) => theme.colors.contrastText};
-    display: flex;
+    
     flex: 1;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
     padding-right: 20px;
     padding-top: 50px;
     padding-bottom: 20px;
-
-    border: 1px solid white;
+    //border: 1px solid white;
+    color: ${({ theme }) => theme.colors.contrastText};
+    .a {
+      color: inherit;
+    }
 `;
 
 const Layout = props => {
