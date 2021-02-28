@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 const Background = styled.div`
     width: 100%;
+    height:100%;
     background-size: cover;
     background-position: center;
     background-color: ${({ theme }) => theme.colors.secondary};

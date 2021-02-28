@@ -19,8 +19,6 @@ const HeaderBase = styled.div`
   color: ${({ theme }) => theme.colors.contrastText};
   background-color: ${({ theme }) => theme.colors.primary};
   text-transform: uppercase;
-  
-  cursor: pointer;
 `;
 
 const HeaderLabel = styled.div`
@@ -31,7 +29,9 @@ const HeaderLabel = styled.div`
 export default function Header() {
     return(
         <HeaderBase>
-                <HeaderLabel>Mateus Franco</HeaderLabel>
+                <HeaderLabel>
+                    Mateus Franco
+                </HeaderLabel>
                 <NavBar/>
         </HeaderBase>
     );

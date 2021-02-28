@@ -23,7 +23,6 @@ const HNavButton = styled.div`
   .active {
     color: ${({ theme }) => theme.colors.contrastText};
     border-bottom: 2px solid white;
-
   }
 
 `;

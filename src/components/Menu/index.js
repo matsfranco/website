@@ -44,7 +44,7 @@ const HNavBar = styled.div`
 
 `;
 
-function NavBar() {
+function Menu() {
 
     const [open, setOpen] = useState(false);
     const isBreakpoint = useMediaQuery(600)
@@ -71,4 +71,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+export default Menu;
