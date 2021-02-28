@@ -1,7 +1,7 @@
 import NavButton from '../NavigationButton/index.js';
 import styled from 'styled-components';
 import Burger from '../Burger/index.js';
-import Menu from '../Menu/index.js';
+import VNavBar from '../VNavigationBar/index.js';
 import React, { useState, useCallback, useEffect } from 'react';
 
 const useMediaQuery = (width) => {
@@ -30,24 +30,17 @@ const useMediaQuery = (width) => {
     return targetReached;
   };
 
-
-
-const NavigationBarBase = styled.div`
+const HNavBar = styled.div`
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     height:  45px;
-    width: 100%;
 
-    background: ${({ theme }) => theme.colors.navbarBackground};
+    //background: ${({ theme }) => theme.colors.navbarBackground};
 
     //box-shadow: 0px -2px 15px rgba(50, 50, 50, 0.45);
 
-    a {
-        color: inherit;
-        text-decoration: none;
-        background: ${({ theme }) => theme.colors.secondary};
-    }
 `;
 
 function NavBar(props) {
@@ -59,18 +52,18 @@ function NavBar(props) {
             { isBreakpoint ? (
                 <div>
                     <Burger open={open} setOpen={setOpen} />
-                    <Menu open={open} setOpen={setOpen} />
+                    <VNavBar open={open} setOpen={setOpen} navItems={props}/>
                 </div>
             ) : (
                 <div>
-                    <NavigationBarBase>
-                    {props.navButtons.map(button => (
+                    <HNavBar>
+                    {props.navItems.map(button => (
                         <NavButton
                             key={button.path}
                             path={button.path}
                             label={button.label} />
                     ))}
-                    </NavigationBarBase>
+                    </HNavBar>
                 </div>
             )}
         </div>

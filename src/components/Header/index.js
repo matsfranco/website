@@ -1,13 +1,16 @@
 import Link from "next/link";
 import styled from 'styled-components';
+import NavBar from '../NavigationBar/index.js';
+import navItems from '../../shared/NavigationItems.js';
 
 const HeaderBase = styled.div`
   display: flex;
+  flex:1;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
 
-  height: 50px;
+  height: 40px;
   width: 100%;
 
 
@@ -22,12 +25,14 @@ const HeaderBase = styled.div`
 
 const HeaderLabel = styled.div`
     padding: 0 20px;
+    width: 100%;
 `; 
 
 export default function Header() {
     return(
         <HeaderBase>
-            <HeaderLabel>Mateus Franco</HeaderLabel>
+                <HeaderLabel>Mateus Franco</HeaderLabel>
+                <NavBar navItems={navItems}/>
         </HeaderBase>
     );
 };

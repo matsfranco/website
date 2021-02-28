@@ -9,5 +9,9 @@
     "warning": "#F1C40F",
     "wrong": "#E5383B"
   },
-  "borderRadius": "4px"
+  "borderRadius": "4px",
+  "mobile": {
+    "vNavBarMaxWidth": "100px"
+  }
+
 }

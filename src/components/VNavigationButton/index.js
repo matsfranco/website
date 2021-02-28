@@ -2,34 +2,28 @@ import Link from "next/link";
 import styled from 'styled-components';
 import { withRouter } from "next/router";
 
-const NavButtonBase = styled.div`
+const VNavButton = styled.div`
   display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 100%;
-
+  flex-direction: column;
   cursor: pointer;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   .Label {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: capitalize;
   }
   
   .active {
     color: ${({ theme }) => theme.colors.contrastText};
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 
   }
 
 `;
 
 const NavButton = props => (
-    <NavButtonBase>
+    <VNavButton>
     <Link href={props.path}>
       <div
         className={`NavButton ${
@@ -40,7 +34,7 @@ const NavButton = props => (
         <span className="Label">{props.label}</span>
       </div>
     </Link>
-    </NavButtonBase>
+    </VNavButton>
   );
   
   export default withRouter(NavButton);

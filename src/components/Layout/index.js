@@ -8,7 +8,6 @@ export default function Layout () {
     return(
         <Background>
             <Header></Header>
-            <NavBar navButtons={navItems}/>
         </Background>      
     );
 }

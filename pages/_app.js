@@ -2,7 +2,7 @@ import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../theme.json';
 import Head from 'next/head';
-
+// https://coolors.co/e5383b-2a2d34-f1c40f-00cc66-ffffff
 
 const GlobalStyle = createGlobalStyle`
   body {
