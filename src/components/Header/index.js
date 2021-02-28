@@ -24,7 +24,9 @@ const HeaderBase = styled.div`
 const HeaderLabel = styled.div`
     padding: 0 20px;
     width: 100%;
-`; 
+`;
+
+
 
 export default function Header() {
     return(
