@@ -2,7 +2,7 @@ import Link from "next/link";
 import styled from 'styled-components';
 import { withRouter } from "next/router";
 
-const NavButtonBase = styled.div`
+const HNavButton = styled.div`
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -28,8 +28,8 @@ const NavButtonBase = styled.div`
 
 `;
 
-const NavButton = props => (
-    <NavButtonBase>
+const HNavigationButton = props => (
+    <HNavButton>
     <Link href={props.path}>
       <div
         className={`NavButton ${
@@ -40,7 +40,7 @@ const NavButton = props => (
         <span className="Label">{props.label}</span>
       </div>
     </Link>
-    </NavButtonBase>
+    </HNavButton>
   );
   
-  export default withRouter(NavButton);
+  export default withRouter(HNavigationButton);

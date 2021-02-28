@@ -37,8 +37,6 @@ const VNavBar = styled.nav`
 transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
 `;
 
-
-
 const Menu = ({ open }) => {
   return (
     <VNavBar open={open}>

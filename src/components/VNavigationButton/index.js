@@ -22,7 +22,7 @@ const VNavButton = styled.div`
 
 `;
 
-const NavButton = props => (
+const VNavigationButton = props => (
     <VNavButton>
     <Link href={props.path}>
       <div
@@ -37,4 +37,4 @@ const NavButton = props => (
     </VNavButton>
   );
   
-  export default withRouter(NavButton);
+  export default withRouter(VNavigationButton);

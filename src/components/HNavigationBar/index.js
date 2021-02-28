@@ -2,6 +2,7 @@ import NavButton from '../HNavigationButton/index.js';
 import styled from 'styled-components';
 import Burger from '../Burger/index.js';
 import VNavBar from '../VNavigationBar/index.js';
+import navItems from '../../shared/NavigationItems.js';
 import React, { useState, useCallback, useEffect } from 'react';
 
 const useMediaQuery = (width) => {
@@ -43,21 +44,21 @@ const HNavBar = styled.div`
 
 `;
 
-function NavBar(props) {
+function NavBar() {
 
     const [open, setOpen] = useState(false);
-    const isBreakpoint = useMediaQuery(500)
+    const isBreakpoint = useMediaQuery(600)
     return (
         <div>
             { isBreakpoint ? (
                 <div>
                     <Burger open={open} setOpen={setOpen} />
-                    <VNavBar open={open} setOpen={setOpen} navItems={props}/>
+                    <VNavBar open={open} setOpen={setOpen}/>
                 </div>
             ) : (
                 <div>
                     <HNavBar>
-                    {props.navItems.map(button => (
+                    {navItems.map(button => (
                         <NavButton
                             key={button.path}
                             path={button.path}
