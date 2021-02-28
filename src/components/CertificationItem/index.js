@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -8,10 +7,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 200,
+    width: 200,
+    height: 270,
   },
   media: {
-    height: 100,
+    height: 200,
   },
 });
 
@@ -39,12 +39,6 @@ export default function MediaCard(props) {
           <CertificationTitle>
             {props.title}
           </CertificationTitle>
-          <CertificationDetails>
-            Emitido por: {props.expeditor}
-          </CertificationDetails>          
-          <CertificationDetails>
-            Emitido em: {props.expeditionDate}
-          </CertificationDetails>
         </CardContent>
       </CardActionArea>
     </Card>
