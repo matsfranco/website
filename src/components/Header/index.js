@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from 'styled-components';
-import NavBar from '../NavigationBar/index.js';
+import NavBar from '../HNavigationBar/index.js';
 import navItems from '../../shared/NavigationItems.js';
 
 const HeaderBase = styled.div`
