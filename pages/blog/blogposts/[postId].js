@@ -1,14 +1,28 @@
 import Layout from '../../../src/components/Layout/index.js';
  
-export async function getServerSideProps(context) {
-    const postId = context.query.postId;
+export async function getStaticPaths() {
 
-    // The only thing to be sent to front-end
     return {
-        props: {
-            id: postId
-        }
+        paths: [{
+            params: {
+                postId: '1'
+            }
+        },{
+           params: {
+                postId: '2'
+           } 
+        }],
+        fallback: false
     }
+}
+
+export async function getStaticProps(context) {
+    const id = context.params.postId;
+    return({
+        props: {
+            postId : id
+        }
+    });
 }
 
 
@@ -17,7 +31,7 @@ function BlogPost(props) {
     return (
         <Layout>
             <div>
-                Id do Post: {props.id}
+                Id do Post: {props.postId}
             </div>
         </Layout>
 
