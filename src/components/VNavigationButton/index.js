@@ -9,7 +9,7 @@ const VNavButton = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
   .Label {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
     text-transform: capitalize;
   }
