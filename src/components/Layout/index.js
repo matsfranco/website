@@ -1,10 +1,8 @@
 import Background from '../Background/index.js';
 import Header from '../Header/index.js';
-import NavBar from '../HNavigationBar/index.js';
-import navItems from '../../shared/NavigationItems.js';
   
 import Head from "next/head";
-export default function Layout () {
+const Layout = props => {
     
     return(
 
@@ -15,8 +13,10 @@ export default function Layout () {
                     <meta charSet="utf-8" />
                 </Head>
                 <Header></Header>
+                <div className="Content">{props.children}</div>
             </Background>    
 
              
     );
-}
+};
+export default Layout;
