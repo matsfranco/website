@@ -32,7 +32,7 @@ export default function Header() {
     return(
         <HeaderBase>
                 <HeaderLabel>Mateus Franco</HeaderLabel>
-                <NavBar navItems={navItems}/>
+                <NavBar/>
         </HeaderBase>
     );
 };
