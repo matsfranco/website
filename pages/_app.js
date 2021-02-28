@@ -1,37 +1,40 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import theme from '../theme.json';
 import Head from 'next/head';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from '../src/theme';
+// https://coolors.co/e5383b-2a2d34-f1c40f-00cc66-ffffff
 
-export default function MyApp(props) {
-  const { Component, pageProps } = props;
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: ${({ theme }) => theme.contrastText};
+  }
 
-  React.useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector('#jss-server-side');
-    if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
-    }
-  }, []);
+  html,body {
+    min-height: 100vh;
+  }
+  #__next {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+`
 
+export default function MyApp({ Component, pageProps }) {
   return (
-    <React.Fragment>
-      <Head>
-        <title>My page</title>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-      </Head>
+    <>
+    <Head>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    </Head>
       <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
+      <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>
-    </React.Fragment>
-  );
+    </>
+  )
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};

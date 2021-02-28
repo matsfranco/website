@@ -21,13 +21,20 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
-    "@material-ui/core": "^4.11.2",
+    "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^4.6.0",
     "material-ui-icons": "^1.0.0-beta.36",
     "next": "^10.0.3",
+    "next-images": "^1.7.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
+    "reactstrap": "^8.9.0",
+    "styled-components": "^5.2.1"
   }
 }
