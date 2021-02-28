@@ -1,5 +1,5 @@
 import Layout from '../../src/components/Layout/index.js';
-import CertificationItem from '../../src/components/CertificationItem/index.js';
+import ListItem from '../../src/components/CertificationItem/index.js';
 
 export const getStaticProps = async() => {
 
@@ -33,11 +33,11 @@ export default function Portfolio(props)  {
             <div>
                 {props.certifications.map(certification => (
                     <div>
-                        <CertificationItem 
+                        <ListItem 
                             title={certification.attributes.fields.title}
                             expeditor={certification.attributes.fields.expeditor}
-                            expeditorIcon={certification.attributes.fields.expeditorIcon}
                             expeditionDate={certification.attributes.fields.expeditiondate}
+                            expeditorIcon={certification.attributes.fields.expeditorIcon}
                         />
                     </div>
                 ))}
