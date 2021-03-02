@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Image = styled.img`
     width: 80px;
     float: left;
-    padding-right: 10px;
+    padding-right: 10px;   
 `;
 
 const Box = styled.div`
