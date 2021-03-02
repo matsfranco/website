@@ -15,15 +15,15 @@ export const getStaticProps = async() => {
     cmsResponse = await fetch("https://api.elegantcms.io/api/v1/contents?filter[type]=certification&filter[status]=live&sort=updated_at", fetchParams); 
     const certificationList = await cmsResponse.json();
     
-    cmsResponse = await fetch("https://api.elegantcms.io/api/v1/contents?filter[type]=experience&filter[status]=live&sort=updated_at", fetchParams);
-    const experienceList = await cmsResponse.json();
+    cmsResponse = await fetch("https://api.elegantcms.io/api/v1/contents?filter[type]=education&filter[status]=live&sort=updated_at", fetchParams);
+    const educationList = await cmsResponse.json();
 
 
-    
+
     return {
         props: {
             certifications: certificationList.data,
-            experiences: experienceList.data
+            educations: educationList.data
         },
     }
 }

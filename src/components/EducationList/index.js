@@ -19,14 +19,15 @@ export default function List({...props})  {
                     {listTitle}
                 </Typography>
             </Grid>
-            {props.experiences.map(experience => (
-                <Grid item xs={12} key = {experience.attributes.fields.title} >
+            {props.educations.map(education => (
+                <Grid item xs={12} key = {education.attributes.fields.title} >
                     <EducationItem 
-                        title={experience.attributes.fields.title}
-                        institutionName={experience.attributes.fields.institutioncompany[0].title}
-                        location={experience.attributes.fields.location}
-                        startDate={experience.attributes.fields.startdate}
-                        endDate={experience.attributes.fields.enddate}
+                        title={education.attributes.fields.title}
+                        institutionIcon={education.attributes.fields.institutionicon}
+                        institutionName={education.attributes.fields.institutionname}
+                        location={education.attributes.fields.location}
+                        startDate={education.attributes.fields.startdate}
+                        endDate={education.attributes.fields.enddate}
                     />
                 </Grid>
             ))}
