@@ -1,5 +1,5 @@
 import Layout from '../../src/components/Layout/index.js';
-import Certifications from '../../src/components/Certifications/index.js';
+import CertificationList from '../../src/components/CertificationList/index.js';
 
 export const getStaticProps = async() => {
 
@@ -21,11 +21,13 @@ export const getStaticProps = async() => {
     }
 }
 
+
+
 export default function Portfolio(props)  {
 
     return(
         <Layout>
-            <Certifications {...props}/>
+            <CertificationList {...props}/>
         </Layout>
     );
 }
