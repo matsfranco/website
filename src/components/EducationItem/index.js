@@ -10,36 +10,18 @@ const useStyles = makeStyles((theme) => ({
 
 
 const Image = styled.img`
-    width: 80px;
-    padding-right: 10px;   
+    width: 100%;   
 `;
 
 const Box = styled.div`
-    width: 40%;
-    min-width: 180px;
+    width: 50%;
+    min-width: 50%;
     min-height: 85px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #bbb;
     background-color: #ffffff;
     border-radius: 5px;
-
-    .imageColumn {
-        float: left;
-        width: 20%;
-    }
-
-    .textColumn {
-        float: left;
-        width: 80%;
-    }
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table; 
-    }
-
 `;
 
 const CardTitle = styled.div` 
@@ -51,7 +33,7 @@ const CardTitle = styled.div`
 `;
 
 const CardDetail = styled.div`  
-    min-width: 50%; 
+    min-width: 100%; 
     font-size: 12px;
     font-weight: normal;
     color:  ${({ theme }) => theme.colors.secondary};
@@ -62,18 +44,18 @@ export default function ListItem(props) {
   
   return (
     <Box variant="outlined" elevation={3}>
-        <div class="row">
-            <div class="imageColumn">
+        <Grid container direction="row" justify="flex-start" alignItems="flex-start" spacing={2}>
+            <Grid item xs={6} sm={2}>
                 <Image src = {props.institutionIcon}/> 
-            </div>      
-            <div class="textColumn">
+            </Grid>      
+            <Grid item xs={6} sm={10}>
                 <CardTitle>{props.title}</CardTitle>
                 <CardDetail><b>Instituição:</b> {props.institutionName}</CardDetail>
                 <CardDetail><b>Local:</b> {props.location}</CardDetail>
                 <CardDetail><b>Data de Início:</b> {props.startDate}</CardDetail>
                 <CardDetail><b>Data de Término: </b>{props.endDate}</CardDetail>
-            </div>          
-        </div>    
+            </Grid>          
+        </Grid>    
     </Box>
   );
 }
