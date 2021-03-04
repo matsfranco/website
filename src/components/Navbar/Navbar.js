@@ -21,7 +21,7 @@ import {
     Apps,
     ContactMail
 } from "@material-ui/icons"
-import menuItems from '../../shared/menuItems.js';
+import menuItems from '../../shared/MenuItems.js';
 
 
 //  CSS Styles
