@@ -2,6 +2,8 @@ import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../theme.json';
 import Head from 'next/head';
+import CssBaseline from '@material-ui/core/CssBaseline'
+
 // https://coolors.co/e5383b-2a2d34-f1c40f-00cc66-ffffff
 
 const GlobalStyle = createGlobalStyle`
@@ -26,15 +28,14 @@ const GlobalStyle = createGlobalStyle`
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
-    <Head>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-    </Head>
-      <ThemeProvider theme={theme}>
-      <GlobalStyle />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
+      <>
+          <CssBaseline/ >
+              <Head>
+                  <link rel="preconnect" href="https://fonts.gstatic.com" />
+                  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+              </Head>
+              <Component {...pageProps} />
+         
+      </>
   )
 }
