@@ -110,8 +110,29 @@ const useStyles = makeStyles(theme=>({
 
 }));
 
+export const getStaticProps = async() => {
+    let cmsResponse;
+    const apiSecret = process.env.CMS_API_SECRET;
+    
+    const fetchParams = {
+        headers: {
+            Authorization: `Token token=${apiSecret}`,
+        }
+    }
 
-const Resume = () => {
+    cmsResponse = await fetch("https://api.elegantcms.io/api/v1/contents?filter[type]=experience&filter[status]=live&sort=updated_at", fetchParams); 
+    const experienceList = await cmsResponse.json();
+    console.log(experienceList.data);
+    return {
+        props: {
+            experiences: experienceList.data
+        },
+    }
+}
+
+
+
+export default function Resume(props) {
     const classes = useStyles();
     return(
         <>  
@@ -155,6 +176,4 @@ const Resume = () => {
         </>
     );
 
-};
-
-export default Resume;
+}
