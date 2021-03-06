@@ -1,11 +1,10 @@
 import React from "react";
 import {
-    ArrowBack,
     AssignmentInd,
     Home,
-    Apps,
+    Book,
     ContactMail,
-    PersonOutline
+    Work
 } from "@material-ui/icons"
 
 const MenuItems = [
@@ -15,7 +14,7 @@ const MenuItems = [
         labelEn: "Home",
         path: "/"
     },{
-        icon: <PersonOutline/>,
+        icon: <Work/>,
         label: "Currículo",
         labelEN: "Resume",
         path: "/resume"
@@ -26,7 +25,7 @@ const MenuItems = [
         labelEn: "Portfolio",
         path: "/portfolio"
     },{
-        icon: <Apps/>,
+        icon: <Book/>,
         label: "Blog",
         labelEn: "Blog",
         path: "/blog"

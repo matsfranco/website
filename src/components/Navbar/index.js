@@ -82,7 +82,7 @@ const Navbar = () => {
                         <IconButton onClick={toggleSlider("right",true)}>
                             <Menu style={{ background:"#e5383b" }}/>
                         </IconButton>
-                        <Typography variant="h5" style={{color: "white"}}>MATEUS FRANCO</Typography>
+                        <Typography variant="h5" style={{color: "white"}}>Mateus Franco</Typography>
                     </Toolbar>
                     <MobilRightMenySlider open={state.right} anchor="left" onClose={toggleSlider("right",false)}>
                         {slideList("right")}
