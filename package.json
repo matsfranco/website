@@ -27,6 +27,7 @@
     "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.6.0",
+    "dateformat": "^4.5.1",
     "material-ui-icons": "^1.0.0-beta.36",
     "next": "^10.0.3",
     "next-images": "^1.7.0",

@@ -1,12 +1,13 @@
-import Layout from '../../src/components/Layout/index.js';
+import React from "react";
+import Navbar from '../../src/components/Navbar/index.js';
 
 
+export default function Contact(props)  {
 
-export default function Contact() {
     return(
-
-        <Layout>
-            <div>Contato</div>
-        </Layout>
+        <>
+        <Navbar/>
+        <div>Em implementação!! ;)</div> 
+        </>
     );
 }

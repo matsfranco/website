@@ -1,7 +1,7 @@
-import Layout from '../../src/components/Layout/index.js';
-import CertificationList from '../../src/components/CertificationList/index.js';
-import EducationList from '../../src/components/EducationList/index.js';
+import React from "react";
+import Navbar from '../../src/components/Navbar/index.js';
 
+/*
 export const getStaticProps = async() => {
     let cmsResponse;
     const apiSecret = process.env.CMS_API_SECRET;
@@ -27,15 +27,15 @@ export const getStaticProps = async() => {
         },
     }
 }
-
+*/
 
 
 export default function Portfolio(props)  {
 
     return(
-        <Layout>
-            <EducationList {...props}/>
-            <CertificationList {...props}/>
-        </Layout>
+        <>
+        <Navbar/>
+        <div>Em implementação!! ;)</div> 
+        </>
     );
 }

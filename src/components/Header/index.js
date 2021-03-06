@@ -48,7 +48,7 @@ export default function Header() {
             <br/>
             <Typography className={classes.subtitle} variant="h5">
                 <Typed 
-                    strings={["Salesforce Developer","Engineer","Maker"]} 
+                    strings={["Salesforce Developer","Engenheiro de Computação","Maker"]} 
                     typeSpeed={40} 
                     backspeed={60}
                     loop/>
