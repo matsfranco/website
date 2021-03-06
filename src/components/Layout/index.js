@@ -1,8 +1,6 @@
 import Header from '../Header/index.js';
 import Head from "next/head";
-import Navbar from '../Navbar/Navbar.js';
-import { makeStyles } from "@material-ui/core/styles"
-
+import Navbar from '../Navbar/index.js';
 /*
 const DefaultPageLayout = styled.div`
     
@@ -24,18 +22,11 @@ const DefaultPageLayout = styled.div`
 */
 
 
+
 const Layout = props => {
-    
     return(
 
-            <> 
-                <Head>
-                    <title>Mateus Franco</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <meta charSet="utf-8" />
-                </Head>            
-                <Navbar/>
-                <Header/>
+            <>          
                 <div>
                     {props.children}
                 </div>

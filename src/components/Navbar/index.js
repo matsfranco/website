@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from 'next/link'
 import { makeStyles } from '@material-ui/core/styles';
 import MobilRightMenySlider from "@material-ui/core/Drawer"
 import {
@@ -15,11 +16,7 @@ import {
     Box
 } from "@material-ui/core";
 import {
-    Menu,
-    AssignmentInd,
-    Home,
-    Apps,
-    ContactMail
+    Menu
 } from "@material-ui/icons"
 import menuItems from '../../shared/MenuItems.js';
 
@@ -67,10 +64,12 @@ const Navbar = () => {
         <Divider/>
         <List>
             {menuItems.map((menuItem, key) => (
-                <ListItem button key={key}>
-                <ListItemIcon className={classes.menuItemText}>{menuItem.icon}</ListItemIcon>
-                <ListItemText className={classes.menuItemText} primary={menuItem.label}/> 
-            </ListItem>
+                <Link href={menuItem.path}>
+                    <ListItem button key={key}>
+                        <ListItemIcon className={classes.menuItemText}>{menuItem.icon}</ListItemIcon>
+                        <ListItemText className={classes.menuItemText} primary={menuItem.label}/>
+                    </ListItem>
+                </Link>
             ))}
         </List>
     </Box>
@@ -81,7 +80,7 @@ const Navbar = () => {
                 <AppBar position="static" style={{ background: "#e5383b" }}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right",true)}>
-                            <Menu style={{ background:"tomato" }}/>
+                            <Menu style={{ background:"#e5383b" }}/>
                         </IconButton>
                         <Typography variant="h5" style={{color: "white"}}>MATEUS FRANCO</Typography>
                     </Toolbar>

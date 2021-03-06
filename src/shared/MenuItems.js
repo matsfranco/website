@@ -4,7 +4,8 @@ import {
     AssignmentInd,
     Home,
     Apps,
-    ContactMail
+    ContactMail,
+    PersonOutline
 } from "@material-ui/icons"
 
 const MenuItems = [
@@ -14,6 +15,12 @@ const MenuItems = [
         labelEn: "Home",
         path: "/"
     },{
+        icon: <PersonOutline/>,
+        label: "Currículo",
+        labelEN: "Resume",
+        path: "/resume"
+    },{
+        
         icon: <AssignmentInd/>,
         label: "Portfolio",
         labelEn: "Portfolio",
