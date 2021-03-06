@@ -14,7 +14,6 @@ export const getStaticProps = async() => {
 
     cmsResponse = await fetch("https://api.elegantcms.io/api/v1/contents?filter[type]=experience&filter[status]=live&sort=-updated_at", fetchParams); 
     const experienceList = await cmsResponse.json();
-    console.log(experienceList.data);
     return {
         props: {
             experiences: experienceList.data
