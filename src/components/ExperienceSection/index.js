@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme=>({
         color: "white",
         padding: "3rem 0",
         textTransform: "uppercase"
-    },
+    }
 }));
 
 export default function ExperienceSection({...props}) {

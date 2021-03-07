@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from '../../src/components/Navbar/index.js';
 import ExperienceSection from '../../src/components/ExperienceSection/index.js';
+import LanguageSection from '../../src/components/LanguageSection/index.js';
 
 export const getStaticProps = async() => {
     let cmsResponse;
@@ -25,6 +26,7 @@ export default function Resume(props) {
     return(
         <>  
             <Navbar/> 
+            <LanguageSection/>
             <ExperienceSection {...props}/>
            
         </>
