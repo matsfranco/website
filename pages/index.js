@@ -1,9 +1,12 @@
-import Layout from '../src/components/Layout/index.js';
+import Header from '../src/components/Header/index.js';
+import Navbar from '../src/components/Navbar/index.js';
 
 export default function Home() {
     return(
-        <Layout>
-            <div>Home</div>
-        </Layout>
+        <>
+            <Navbar/>
+            <Header/>
+
+        </>    
     );
 }

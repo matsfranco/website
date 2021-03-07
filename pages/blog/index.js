@@ -1,9 +1,13 @@
-import Layout from '../../src/components/Layout/index.js';
+import React from "react";
+import Navbar from '../../src/components/Navbar/index.js';
 
-export default function Home() {
+
+export default function Blog(props)  {
+
     return(
-        <Layout>
-            <div>Blog</div>
-        </Layout>
+        <>
+        <Navbar/>
+        <div>Em implementação!! ;)</div> 
+        </>
     );
 }
