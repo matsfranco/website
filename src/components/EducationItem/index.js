@@ -1,61 +1,53 @@
-import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import { Box,Typography } from '@material-ui/core';
+import dateFormat from 'dateformat';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  }
-}));
+const useStyles = makeStyles(theme=>({
 
-
-const Image = styled.img`
-    width: 100%;   
-`;
-
-const Box = styled.div`
-    width: 50%;
-    min-width: 50%;
-    min-height: 85px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #bbb;
-    background-color: #ffffff;
-    border-radius: 5px;
-`;
-
-const CardTitle = styled.div` 
-    width: 100%;
-    min-width: 50%; 
-    font-size: 16px;
-    font-weight: bold;
-    color:  ${({ theme }) => theme.colors.secondary};
-`;
-
-const CardDetail = styled.div`  
-    min-width: 100%; 
-    font-size: 12px;
-    font-weight: normal;
-    color:  ${({ theme }) => theme.colors.secondary};
-`;
+    mainContainer: {
+        background:"#2A2D34",
+    },    
+    heading: {
+        color: "white",
+        padding: "3rem 0",
+        textTransform: "uppercase"
+    }, 
+    itemTitle: {
+        textAlign: "center",
+        maxWidth: "25rem",
+        margin: "auto",
+        color: "white",
+        padding: "0.5rem 0",
+        fontWeight: "bold",
+        align: "center",        
+        borderBottom: "2px solid white",        
+        background: "#E5383B",
+        lineHeight: 1,
+        padding: "0.5rem 0 0.5rem",
+    },   
+    itemContent: {
+        color: "white",
+        padding: "0.3rem 0 0 0"
+    }
+}))
 
 export default function ListItem(props) {
     const classes = useStyles();
   
-  return (
-    <Box variant="outlined" elevation={3}>
-        <Grid container direction="row" justify="flex-start" alignItems="flex-start" spacing={2}>
-            <Grid item xs={6} sm={2}>
-                <Image src = {props.institutionIcon}/> 
-            </Grid>      
-            <Grid item xs={6} sm={10}>
-                <CardTitle>{props.title}</CardTitle>
-                <CardDetail><b>Instituição:</b> {props.institutionName}</CardDetail>
-                <CardDetail><b>Local:</b> {props.location}</CardDetail>
-                <CardDetail><b>Data de Início:</b> {props.startDate}</CardDetail>
-                <CardDetail><b>Data de Término: </b>{props.endDate}</CardDetail>
-            </Grid>          
-        </Grid>    
-    </Box>
+    return (
+        <>
+            <Typography className={classes.itemTitle} variant="h6" align="center">
+                {props.title}
+            </Typography>            
+            <Typography className={classes.itemContent} variant="body1" align="center">
+                {props.institutionName}
+            </Typography>
+            <Typography className={classes.itemContent} variant="body1" align="center">
+                {props.location}
+            </Typography>
+            <Typography className={classes.itemContent} variant="body1" align="center">
+                {dateFormat(props.startDate,"mmm/yyyy")} -  {dateFormat(props.endDate,"mmm/yyyy")}
+            </Typography>
+        </>
   );
 }
