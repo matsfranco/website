@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme=>({
     }, 
     itemTitle: {
         textAlign: "center",
-        maxWidth: "25rem",
+        maxWidth: "24rem",
         margin: "auto",
         color: "white",
         padding: "0.5rem 0",

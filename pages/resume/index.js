@@ -3,6 +3,7 @@ import Navbar from '../../src/components/Navbar/index.js';
 import ExperienceSection from '../../src/components/ExperienceSection/index.js';
 import LanguageSection from '../../src/components/LanguageSection/index.js';
 import EducationSection from '../../src/components/EducationSection/index.js';
+import SkillSection from '../../src/components/SkillSection/index.js';
 
 export const getStaticProps = async() => {
     let cmsResponse;
@@ -31,11 +32,12 @@ export const getStaticProps = async() => {
 export default function Resume(props) {
     return(
         <>  
-            <Navbar/> 
+            <Navbar/>
             <EducationSection {...props}/>
             <LanguageSection/>
+            <SkillSection />
             <ExperienceSection {...props}/>
-           
+ 
         </>
     );
 
