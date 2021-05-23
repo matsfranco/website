@@ -43,14 +43,14 @@ export default function Header() {
                 <Avatar className={classes.avatar} src="https://media.elegantcms.io/a/b3f57686-a424-4e1a-9884-09f50e3f2495/bb0702fa-e359-48da-8642-5318c6a5a99d/1614816174/o/IMG-20191122-WA0025.jpg?1614816174" alt="Mateus Franco avatar"/>
             </Grid>
             <Typography className={classes.title} variant="h4">
-                <Typed strings={["Mateus Franco"]} typeSpeed={40}/>
+                <Typed strings={["Mateus Franco"]} typeSpeed={40} showCursor={false} />
             </Typography>
             <br/>
             <Typography className={classes.subtitle} variant="h5">
                 <Typed 
                     strings={["Salesforce Developer","Engenheiro de Computação","Maker"]} 
-                    typeSpeed={40} 
-                    backspeed={60}
+                    typeSpeed={35} 
+                    backspeed={55}
                     loop/>
             </Typography>
         </Box>
