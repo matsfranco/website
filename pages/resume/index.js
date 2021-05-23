@@ -4,6 +4,8 @@ import ExperienceSection from '../../src/components/ExperienceSection/index.js';
 import LanguageSection from '../../src/components/LanguageSection/index.js';
 import EducationSection from '../../src/components/EducationSection/index.js';
 import SkillSection from '../../src/components/SkillSection/index.js';
+import { Grid } from "@material-ui/core";
+
 
 export const getStaticProps = async() => {
     let cmsResponse;
@@ -33,10 +35,24 @@ export default function Resume(props) {
     return(
         <>  
             <Navbar/>
-            <EducationSection {...props}/>
-            <LanguageSection/>
-            <SkillSection />
-            <ExperienceSection {...props}/>
+            <Grid container spacing={2} direction="row" justify="center" alignItems="top" >
+                <Grid item xs={6} >
+                    <Grid container spacing={2} direction="row" justify="center" alignItems="flex-start" >
+                        <Grid item xs={12}>
+                            <EducationSection {...props}/>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <LanguageSection/>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <SkillSection />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item xs={6}>
+                    <ExperienceSection {...props}/>
+                </Grid>
+            </Grid>
  
         </>
     );

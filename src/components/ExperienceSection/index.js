@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
-import TimeLineItem from "../TimeLineItem/index.js";
+import ExperienceItem from "../ExperienceItem/index.js";
 
 const useStyles = makeStyles(theme=>({
 
@@ -49,10 +49,10 @@ export default function ExperienceSection({...props}) {
                 <Typography className={classes.heading} variant="h4" align="center">
                     {timeLineTitle}
                 </Typography>
-                <Box className={classes.timeLine} component="div">
-                        <Box className={classes.timeLine} component="div"></Box>
+                <Box component="div">
+                        <Box component="div"></Box>
                         {props.experiences.map(experience => (
-                            <TimeLineItem
+                            <ExperienceItem
                                 title={experience.attributes.fields.title}
                                 subtitle={experience.attributes.fields.institutioncompany[0].title}
                                 startDate={experience.attributes.fields.startdate}
