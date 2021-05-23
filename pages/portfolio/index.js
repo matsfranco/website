@@ -1,6 +1,10 @@
 import React from "react";
 import Navbar from '../../src/components/Navbar/index.js';
-
+import { makeStyles } from "@material-ui/core/styles";
+import { 
+    Typography, 
+    Box,
+    Grid } from "@material-ui/core";
 /*
 export const getStaticProps = async() => {
     let cmsResponse;
