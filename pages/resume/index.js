@@ -35,10 +35,10 @@ export default function Resume(props) {
     return(
         <>  
             <Navbar/>
-            <Grid item xs={6}>
-                <ExperienceSection {...props}/>
-            </Grid>
             <Grid container spacing={2} direction="row" justify="center" alignItems="top" >
+                <Grid item xs={6}>
+                    <ExperienceSection {...props}/>
+                </Grid>
                 <Grid item xs={6} >
                     <Grid container spacing={2} direction="row" justify="center" alignItems="flex-start" >
                         <Grid item xs={12}>
